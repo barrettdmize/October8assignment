@@ -3,28 +3,106 @@ body {
   margin: 0;
   padding: 0;
 }
+/*HEADER*/
+
 header img{
   width: 30%;
 }
 header {
-min-height: 450px;
-background-color: blue;
-position: relative;
-width: 100%;
-background-image: url('http://images8.alphacoders.com/431/431413.jpg');
--webkit-background-size: cover;
-background-size: cover;
-background-position: center;
+  min-height: 450px;
+  position: relative;
+  width: 100%;
+  background-image: url(http://www.desktopwallpaperhd.net/wallpapers/21/d/desktop-wallpaper-photo-background-wave-stock-ocean-210445.jpg);
+  /*background: linear-gradient(
+        blue, #f06d06
+      ); */
 }
+
+.logoandtextwrapper {
+  display:inline-block;
+  width:49%;
+  padding-left: 350px;
+}
+
+.logowrapper {
+display:  inline-block;
+width: 49%
+}
+
+.logowrapper img {
+  width: 7%;
+}
+
+
+.aboutsearch img{
+  width: 10%;
+}
+
+.aboutsearch {
+display:  inline-block;
+width: 49%
+}
+
+.aboutsearchwrapper {
+  display:inline-block;
+  width:49%
+  padding-right: 600px
+}
+
+header p {
+  display: inline-block;
+}
+
+h1 {
+  color:white;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 10px;
+}
+
+/*BODY*/
+
+h3 {
+  width: 66%
+  font-size: 40px;
+}
+
+section {
+  display:inline-block;
+}
+
+h4 {
+  display: inline-block;
+  font-size: 25px;
+  width: 66%
+}
+
 .cols{
   vertical-align: top;
   display: inline-block;
 }
 
-.col-4{
-  width:24%;
+.col-1 {
+  width: 60%
 }
 
+.col-2 {
+  display:inline-block;
+  width: 100%;
+}
+
+.col-3 {
+  display: inline-block;
+  width: 28%;
+}
+
+.col-4{
+  display:inline-block;
+  width:24%;
+}
 
 
 span {
@@ -41,11 +119,13 @@ h1 {
   font-size: 75px;
 }
 .container {
-  width: 100%;
+  /*display:inline-block;*/
+  width: 80%;
+  margin: 0 auto;
 }
 .container section {
   display: inline-block;
-  width: 49%;
+  width: 100%;
 }
 .container2 {
   width: 100%;
@@ -62,16 +142,46 @@ h1 {
 span {
   width: 100%;
 }
-}
-.logo {
-display:  inline-block;
-position: absolute;
-top: 1px;
-left: 60px;
-}
+
 .about {
   display:  inline-block;
   position: absolute;
   top: 1px;
   right: 60px;
+}
+
+@media (max-width: 500px) {
+
+  .aboutsearchwrapper {
+    padding-left: 45%;
+    margin-top: 10px;
+  }
+
+  .logoandtextwrapper {
+
+    padding-left: 45%;
+    margin-top: 80px;
+  }
+
+  .logowrapper img {
+    width: 50%;
+  }
+
+  .logowrapper p {
+    display: none;
+  }
+
+  .col-1{
+    width:100%
+  }
+
+  .container2 section{
+display:block;
+width: 100%;
+margin:auto;
+padding-left: 90px;
+  }
+
+
+
 }
